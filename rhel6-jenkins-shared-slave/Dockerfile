@@ -16,7 +16,7 @@ MAINTAINER Romain Pelisse "belaran@redhat.com"
 
 ADD repos/rhel68.repo /etc/yum.repos.d/rhel68.repo
 ADD repos/epel-release-latest-6.noarch.rpm /root/
-RUN yum -y install /root/epel-release-latest-6.noarch.rpm
+RUN yum -y install /root/epel-release-latest-6.noarch.rpm 
 
 RUN mkdir -p /var/run/sshd
 RUN yum -y update
@@ -27,15 +27,15 @@ ADD sshd/ssh_host_key /etc/ssh/
 ADD sshd/ssh_host_key.pub /etc/ssh/
 ADD sshd/ssh_host_rsa_key /etc/ssh/
 ADD sshd/ssh_host_rsa_key.pub /etc/ssh/
-RUN yum -y install openssh-server java-1.7.0-openjdk-devel java-1.8.0-openjdk-devel git which wget zip unzip svn
+RUN yum -y install openssh-server java-1.8.0-openjdk-devel git which wget zip unzip svn bats patch perl-XML-XPath
 
 RUN echo "root:password" | chpasswd
 RUN groupadd -g 498 jboss
 RUN useradd -u 498 -g 498 jboss
 RUN echo "jboss:jboss" | chpasswd
 
-RUN mkdir -p /home/jenkins
-RUN chown -R jboss:jboss /home/jenkins
+RUN mkdir -p  /home/jenkins-build
+RUN chown -R jboss:jboss  /home/jenkins-build
 
 RUN sed -i 's|session    required     pam_loginuid.so|session    optional     pam_loginuid.so|g' /etc/pam.d/sshd
 
