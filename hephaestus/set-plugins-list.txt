@@ -78,3 +78,4 @@ apache-httpcomponents-client-4-api:latest
 configuration-as-code:latest
 workflow-aggregator:latest
 plugin-usage-plugin:latest
+copyartifact:latest
