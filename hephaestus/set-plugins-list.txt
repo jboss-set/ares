@@ -80,3 +80,9 @@ workflow-aggregator:latest
 plugin-usage-plugin:latest
 role-strategy:latest
 envinject:latest
+job-dsl:latest
+pipeline-utility-steps:latest
+authorize-project:latest
+copyartifact:latest
+ownership:latest
+startup-trigger-plugin:latest
