@@ -1,4 +1,4 @@
 FROM fedora
-RUN yum install -y ansible
+RUN yum install -y ansible git
 RUN groupadd -g 1000 jenkins
 RUN useradd -ms /bin/bash -d /var/jenkins_home/ -u 1000 -g jenkins jenkins
