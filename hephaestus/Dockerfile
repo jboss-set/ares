@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.289.2-lts-centos
+FROM jenkins/jenkins:2.289.3-lts-centos
 ARG jenkins_home=/var/jenkins_home
 
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
