@@ -3,3 +3,5 @@ hephaestus/casc.yaml
 hephaestus/*.crt
 hephaestus/cacerts
 jenkins-job-builder/jenkins_jobs.ini
+molecule-slave/redhat.repo
+molecule-slave/id_rsa.pub
