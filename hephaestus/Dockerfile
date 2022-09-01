@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.303.3-lts
+FROM jenkins/jenkins:2.346.3-2-lts
 ARG jenkins_home=/var/jenkins_home
 ARG java_home=/opt/java/openjdk/
 
