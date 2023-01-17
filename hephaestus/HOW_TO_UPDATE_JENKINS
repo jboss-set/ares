@@ -2,14 +2,13 @@ How to update Jenkins?
 ---
 
 1) bump the version of the Jenkins image to the most recent available -lts version
-2) using the build-next.sh to modify the Dockerfile
-3) build the new image (as root)
+2) build the new image (as root)
 
 # podman build . -t hephaestus.next
 
-4) Delete the content (if any) of the 'next/' folder.
+3) Delete the content (if any) of the 'next/' folder.
 
-5) start the associated service
+4) start the associated service
 
 # systemctl start hephaestus.next
 
