@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.361.2-lts
+FROM jenkins/jenkins:2.375.3-lts
 ARG java_home=/opt/java/openjdk/
 
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
