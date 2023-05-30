@@ -2,6 +2,7 @@ How to update Jenkins?
 ---
 
 1) bump the version of the Jenkins image to the most recent available -lts version
+
 2) build the new image (as root)
 
 # podman build . -t hephaestus.next
@@ -14,4 +15,6 @@ How to update Jenkins?
 
 Check that the service has successfully started and then log into /jenkins.next and double check the new service does use the new image. 
 
-If everything looks good, shutdown jenkins.next, clean the next/ folder, commit the version upgrade in ares and then update the hephaestus image, before restarting the associated service.
+If everything looks good, shutdown jenkins.next, clean the next/ folder, commit the version upgrade in ares and then update the hephaestus image.
+
+Before restarting the associated service with the new images, rename the plugins/ folder inside Jenkins home to ensure the plugins are reinstalled properly.

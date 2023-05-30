@@ -88,4 +88,3 @@ ownership:latest
 startup-trigger-plugin:latest
 Parameterized-Remote-Trigger:latest
 warnings-ng:latest
-oic-auth:latest
