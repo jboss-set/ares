@@ -1,7 +1,7 @@
 FROM jenkins/jenkins:2.414.3-lts
 ARG java_home=/opt/java/openjdk/
 
-ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
+ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false -Dhudson.model.DirectoryBrowserSupport.CSP='unsafe-inline'
 # The /casc.yaml file is to be mounted when starting the container:
 ENV CASC_JENKINS_CONFIG /casc.yaml
 COPY set-plugins-list.txt $jenkins_home/set-plugins-list.txt
