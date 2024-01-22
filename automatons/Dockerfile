@@ -3,3 +3,5 @@ RUN yum install -y unzip zip rsync git procps-ng net-tools iputils glibc-langpac
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 RUN groupadd -g 1000 jenkins
 RUN useradd -ms /bin/bash -d /var/jenkins_home/ -u 1000 -g jenkins jenkins
+# make it possible to run ping command as jenkins user
+RUN chmod u+s /bin/ping
