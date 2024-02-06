@@ -11,4 +11,3 @@ RUN dnf install -y ansible-core gcc python3-pip python3-devel openssl-devel pyth
 RUN pip-3.9 install "molecule[docker,podman,lint]"
 VOLUME [ "/sys/fs/cgroup" ]
 CMD ["/usr/sbin/init"]
-
