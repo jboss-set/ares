@@ -8,6 +8,7 @@ RUN groupadd -g 1000 jenkins && \
     usermod -aG sudo jenkins && \
     echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 RUN dnf install -y ansible-core gcc python3-pip python3-devel openssl-devel python3-libselinux vim-enhanced git ncurses ansible-lint jq procps-ng sudo && dnf clean all
-RUN pip-3.9 install "molecule[docker,podman,lint]"
+RUN pip-3.9 install molecule molecule-docker molecule-podman
+RUN dnf update -y
 VOLUME [ "/sys/fs/cgroup" ]
 CMD ["/usr/sbin/init"]
