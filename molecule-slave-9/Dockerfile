@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi9/ubi
+FROM registry.access.redhat.com/ubi9/ubi-init
 VOLUME ["/etc/pki"]
 ADD redhat.repo /etc/yum.repos.d/
 ADD RPM-GPG-KEY-EPEL-9 /etc/pki/rpm-gpg/
