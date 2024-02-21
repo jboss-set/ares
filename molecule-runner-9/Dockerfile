@@ -9,6 +9,7 @@ RUN groupadd -g 1000 jenkins && \
     usermod -aG sudo jenkins && \
     echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 RUN pip-3.9 install molecule molecule-docker molecule-podman
+RUN pip-3.9 install --upgrade pip setuptools
 RUN dnf update -y
 VOLUME [ "/sys/fs/cgroup" ]
 CMD ["/usr/sbin/init"]
