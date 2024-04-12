@@ -2409,7 +2409,7 @@ baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/jws/5/os
 enabled = 1
 gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslverify = 1
+sslverify = 0
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
@@ -3204,20 +3204,6 @@ sslverifystatus = 1
 [gitops-1.6-for-rhel-8-x86_64-debug-rpms]
 name = Red Hat OpenShift GitOps 1.6 for RHEL 8 x86_64 (Debug RPMs)
 baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/gitops/1.6/debug
-enabled = 0
-gpgcheck = 1
-gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslverify = 1
-sslcacert = /etc/rhsm/ca/redhat-uep.pem
-sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
-sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-metadata_expire = 86400
-enabled_metadata = 0
-sslverifystatus = 1
-
-[lvms-4.12-for-rhel-8-x86_64-files]
-name = Logical Volume Manager Storage (Files)
-baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/lvms/4.12/files
 enabled = 0
 gpgcheck = 1
 gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
@@ -12987,20 +12973,6 @@ metadata_expire = 86400
 enabled_metadata = 0
 sslverifystatus = 1
 
-[osso-1-for-rhel-8-x86_64-files]
-name = Secondary Scheduler Operator 1 for RHEL 8 for Red Hat OpenShift (Files)
-baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/osso/1/files
-enabled = 0
-gpgcheck = 1
-gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
-sslverify = 1
-sslcacert = /etc/rhsm/ca/redhat-uep.pem
-sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
-sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-metadata_expire = 86400
-enabled_metadata = 0
-sslverifystatus = 1
-
 [osso-1-for-rhel-8-x86_64-debug-rpms]
 name = Secondary Scheduler Operator 1 for RHEL 8 for Red Hat OpenShift (Debug RPMs)
 baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/osso/1/debug
@@ -13809,9 +13781,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [rhoai-2-for-rhel-8-x86_64-debug-rpms]
 name = Red Hat OpenShift AI 2 for RHEL 8 x86_64 (Debug RPMs)
@@ -13823,9 +13795,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [rhoai-2-for-rhel-8-x86_64-source-rpms]
 name = Red Hat OpenShift AI 2 for RHEL 8 x86_64 (Source RPMs)
@@ -13837,9 +13809,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [rhocp-4.16-for-rhel-8-x86_64-rpms]
 name = Red Hat OpenShift Container Platform 4.16 for RHEL 8 x86_64 (RPMs)
@@ -13851,9 +13823,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [rhocp-4.16-for-rhel-8-x86_64-debug-rpms]
 name = Red Hat OpenShift Container Platform 4.16 for RHEL 8 x86_64 (Debug RPMs)
@@ -13865,9 +13837,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [rhocp-4.16-for-rhel-8-x86_64-source-rpms]
 name = Red Hat OpenShift Container Platform 4.16 for RHEL 8 x86_64 (Source RPMs)
@@ -13879,9 +13851,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [dirsrv-11.9-for-rhel-8-x86_64-debug-rpms]
 name = Red Hat Directory Server 11.9 for RHEL 8 x86_64 (Debug RPMs)
@@ -13893,9 +13865,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [dirsrv-11.9-for-rhel-8-x86_64-source-rpms]
 name = Red Hat Directory Server 11.9 for RHEL 8 x86_64 (Source RPMs)
@@ -13907,9 +13879,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [dirsrv-11.9-for-rhel-8-x86_64-rpms]
 name = Red Hat Directory Server 11.9 for RHEL 8 x86_64 (RPMs)
@@ -13921,9 +13893,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [jb-coreservices-1-for-rhel-8-x86_64-rhui-debug-rpms]
 name = JBoss Core Services (RHEL 8) (Debug RPMs) from RHUI
@@ -13935,9 +13907,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [jb-coreservices-1-for-rhel-8-x86_64-rhui-source-rpms]
 name = JBoss Core Services (RHEL 8) (Source RPMs) from RHUI
@@ -13949,9 +13921,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [rhmtc-for-rhel-8-x86_64-debug-rpms]
 name = Red Hat Migration Toolkit for Containers for RHEL 8 x86_64 (Debug RPMs)
@@ -13963,9 +13935,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [jb-coreservices-textonly-1-for-middleware-rhui-rpms]
 name = Red Hat JBoss Core Services Text-Only Advisories from RHUI
@@ -13977,9 +13949,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [rhmt-1.1-for-rhel-8-x86_64-debug-rpms]
 name = Red Hat Migration Toolkit 1.1 for RHEL 8 x86_64 (Debug RPMs)
@@ -13991,9 +13963,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [rhmt-1.0-for-rhel-8-x86_64-debug-rpms]
 name = Red Hat Migration Toolkit 1.0 for RHEL 8 x86_64 (Debug RPMs)
@@ -14005,9 +13977,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [rhmtc-for-rhel-8-x86_64-rpms]
 name = Red Hat Migration Toolkit for Containers for RHEL 8 x86_64 (RPMs)
@@ -14019,9 +13991,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [rhmt-1.2-for-rhel-8-x86_64-rpms]
 name = Red Hat Migration Toolkit 1.2 for RHEL 8 x86_64 (RPMs)
@@ -14033,9 +14005,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [rhmt-1.0-for-rhel-8-x86_64-source-rpms]
 name = Red Hat Migration Toolkit 1.0 for RHEL 8 x86_64 (Source RPMs)
@@ -14047,9 +14019,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [rhmt-1.1-for-rhel-8-x86_64-rpms]
 name = Red Hat Migration Toolkit 1.1 for RHEL 8 x86_64 (RPMs)
@@ -14061,9 +14033,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [jb-coreservices-1-for-rhel-8-x86_64-rhui-rpms]
 name = JBoss Core Services (RHEL 8) (RPMs) from RHUI
@@ -14075,9 +14047,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [rhmt-1.2-for-rhel-8-x86_64-source-rpms]
 name = Red Hat Migration Toolkit 1.2 for RHEL 8 x86_64 (Source RPMs)
@@ -14089,9 +14061,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [rhmt-1.0-for-rhel-8-x86_64-rpms]
 name = Red Hat Migration Toolkit 1.0 for RHEL 8 x86_64 (RPMs)
@@ -14103,9 +14075,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [rhmt-1.2-for-rhel-8-x86_64-debug-rpms]
 name = Red Hat Migration Toolkit 1.2 for RHEL 8 x86_64 (Debug RPMs)
@@ -14117,9 +14089,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [service-interconnect-1.4-for-rhel-8-x86_64-rpms]
 name = Red Hat Service Interconnect 1.4 for RHEL 8 x86_64 (RPMs)
@@ -14131,9 +14103,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [service-interconnect-1.4-for-rhel-8-x86_64-debug-rpms]
 name = Red Hat Service Interconnect 1.4 for RHEL 8 x86_64 (Debug RPMs)
@@ -14145,9 +14117,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [rhmtc-for-rhel-8-x86_64-source-rpms]
 name = Red Hat Migration Toolkit for Containers for RHEL 8 x86_64 (Source RPMs)
@@ -14159,9 +14131,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [rhmt-1.1-for-rhel-8-x86_64-source-rpms]
 name = Red Hat Migration Toolkit 1.1 for RHEL 8 x86_64 (Source RPMs)
@@ -14173,9 +14145,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [service-interconnect-1.4-for-rhel-8-x86_64-source-rpms]
 name = Red Hat Service Interconnect 1.4 for RHEL 8 x86_64 (Source RPMs)
@@ -14187,9 +14159,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [openshift-builds-1.0-for-rhel-8-x86_64-source-rpms]
 name = Red Hat OpenShift Builds for RHEL 8 x86_64 (Source RPMs)
@@ -14201,9 +14173,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [openshift-builds-1.0-for-rhel-8-x86_64-debug-rpms]
 name = Red Hat OpenShift Builds for RHEL 8 x86_64 (Debug RPMs)
@@ -14215,9 +14187,9 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
 
 [openshift-builds-1.0-for-rhel-8-x86_64-rpms]
 name = Red Hat OpenShift Builds for RHEL 8 x86_64 (RPMs)
@@ -14229,6 +14201,468 @@ sslverify = 1
 sslcacert = /etc/rhsm/ca/redhat-uep.pem
 sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
 sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
-sslverifystatus = 1
 metadata_expire = 86400
 enabled_metadata = 0
+sslverifystatus = 1
+
+[jb-eap-8.0-for-rhel-8-x86_64-rpms]
+name = JBoss Enterprise Application Platform 8.0 (RHEL 8 x86_64) (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/jbeap/8.0/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[jb-eap-8.0-for-rhel-8-x86_64-debug-rpms]
+name = JBoss Enterprise Application Platform 8.0 (RHEL 8 x86_64) (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/jbeap/8.0/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[jb-eap-8.0-for-rhel-8-x86_64-source-rpms]
+name = JBoss Enterprise Application Platform 8.0 (RHEL 8 x86_64) (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/jbeap/8.0/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[pipelines-1.14-for-rhel-8-x86_64-source-rpms]
+name = Red Hat OpenShift Pipelines 1.14 (for RHEL 8 x86_64) (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/pipelines/1.14/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[pipelines-1.14-for-rhel-8-x86_64-debug-rpms]
+name = Red Hat OpenShift Pipelines 1.14 (for RHEL 8 x86_64) (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/pipelines/1.14/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[pipelines-1.14-for-rhel-8-x86_64-rpms]
+name = Red Hat OpenShift Pipelines 1.14 (for RHEL 8 x86_64) (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/pipelines/1.14/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[quay-3.11-for-rhel-8-x86_64-source-rpms]
+name = Red Hat Quay 3.11 (for RHEL 8 x86_64) (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/quay/3.11/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[quay-3.11-for-rhel-8-x86_64-debug-rpms]
+name = Red Hat Quay 3.11 (for RHEL 8 x86_64) (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/quay/3.11/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[quay-3.11-for-rhel-8-x86_64-rpms]
+name = Red Hat Quay 3.11 (for RHEL 8 x86_64) (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/quay/3.11/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[satellite-capsule-6.15-for-rhel-8-x86_64-source-rpms]
+name = Red Hat Satellite Capsule 6.15 for RHEL 8 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/sat-capsule/6.15/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[satellite-6.15-for-rhel-8-x86_64-source-rpms]
+name = Red Hat Satellite 6.15 for RHEL 8 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/satellite/6.15/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[satellite-maintenance-6.15-for-rhel-8-x86_64-debug-rpms]
+name = Red Hat Satellite Maintenance 6.15 for RHEL 8 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/sat-maintenance/6.15/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[satellite-maintenance-6.15-for-rhel-8-x86_64-rpms]
+name = Red Hat Satellite Maintenance 6.15 for RHEL 8 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/sat-maintenance/6.15/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[satellite-6.15-for-rhel-8-x86_64-rpms]
+name = Red Hat Satellite 6.15 for RHEL 8 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/satellite/6.15/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[satellite-6.15-for-rhel-8-x86_64-debug-rpms]
+name = Red Hat Satellite 6.15 for RHEL 8 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/satellite/6.15/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[satellite-capsule-6.15-for-rhel-8-x86_64-debug-rpms]
+name = Red Hat Satellite Capsule 6.15 for RHEL 8 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/sat-capsule/6.15/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[satellite-maintenance-6.15-for-rhel-8-x86_64-source-rpms]
+name = Red Hat Satellite Maintenance 6.15 for RHEL 8 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/sat-maintenance/6.15/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[satellite-utils-6.15-for-rhel-8-x86_64-source-rpms]
+name = Red Hat Satellite Utils 6.15 for RHEL 8 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/sat-utils/6.15/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[satellite-utils-6.15-for-rhel-8-x86_64-debug-rpms]
+name = Red Hat Satellite Utils 6.15 for RHEL 8 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/sat-utils/6.15/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[satellite-utils-6.15-for-rhel-8-x86_64-rpms]
+name = Red Hat Satellite Utils 6.15 for RHEL 8 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/sat-utils/6.15/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[satellite-capsule-6.15-for-rhel-8-x86_64-rpms]
+name = Red Hat Satellite Capsule 6.15 for RHEL 8 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/sat-capsule/6.15/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[gitops-1.12-for-rhel-8-x86_64-source-rpms]
+name = Red Hat OpenShift GitOps 1.12 for RHEL 8 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/gitops/1.12/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[gitops-1.12-for-rhel-8-x86_64-debug-rpms]
+name = Red Hat OpenShift GitOps 1.12 for RHEL 8 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/gitops/1.12/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[gitops-1.12-for-rhel-8-x86_64-rpms]
+name = Red Hat OpenShift GitOps 1.12 for RHEL 8 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/gitops/1.12/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[openstack-17.1-tools-for-rhel-8-x86_64-source-rpms]
+name = Red Hat OpenStack Platform 17.1 Tools for RHEL 8 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/openstack-tools/17.1/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[openstack-17.1-tools-for-rhel-8-x86_64-rpms]
+name = Red Hat OpenStack Platform 17.1 Tools for RHEL 8 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/openstack-tools/17.1/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[openstack-17.1-tools-for-rhel-8-x86_64-debug-rpms]
+name = Red Hat OpenStack Platform 17.1 Tools for RHEL 8 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/openstack-tools/17.1/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[ansible-automation-platform-2-beta-for-rhel-8-x86_64-source-rpms]
+name = Red Hat Ansible Automation Platform 2 Beta for RHEL 8 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/ansible-automation-platform/2-beta/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[ansible-automation-platform-2-beta-for-rhel-8-x86_64-rpms]
+name = Red Hat Ansible Automation Platform 2 Beta for RHEL 8 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/ansible-automation-platform/2-beta/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[ansible-automation-platform-2-beta-for-rhel-8-x86_64-debug-rpms]
+name = Red Hat Ansible Automation Platform 2 Beta for RHEL 8 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/ansible-automation-platform/2-beta/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[openstack-17.1-deployment-tools-for-rhel-8-x86_64-source-rpms]
+name = Red Hat OpenStack Platform 17.1 Director Deployment Tools for RHEL 8 x86_64 (Source RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/openstack-deployment-tools/17.1/source/SRPMS
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[openstack-17.1-deployment-tools-for-rhel-8-x86_64-rpms]
+name = Red Hat OpenStack Platform 17.1 Director Deployment Tools for RHEL 8 x86_64 (RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/openstack-deployment-tools/17.1/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
+
+[openstack-17.1-deployment-tools-for-rhel-8-x86_64-debug-rpms]
+name = Red Hat OpenStack Platform 17.1 Director Deployment Tools for RHEL 8 x86_64 (Debug RPMs)
+baseurl = https://cdn.redhat.com/content/dist/layered/rhel8/x86_64/openstack-deployment-tools/17.1/debug
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+sslverify = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+sslclientkey = /etc/pki/entitlement/8464862062476479302-key.pem
+sslclientcert = /etc/pki/entitlement/8464862062476479302.pem
+metadata_expire = 86400
+enabled_metadata = 0
+sslverifystatus = 1
