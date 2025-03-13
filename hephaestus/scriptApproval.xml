@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<scriptApproval>
+    <approvedSignatures>
+        <string>method hudson.model.Actionable getActions java.lang.Class</string>
+        <string>method hudson.model.Cause$UpstreamCause getUpstreamBuild</string>
+        <string>method hudson.model.CauseAction getCauses</string>
+        <string>method hudson.model.ItemGroup getItem java.lang.String</string>
+        <string>method hudson.model.Job getBuild java.lang.String</string>
+        <string>method hudson.model.Job getBuilds</string>
+        <string>method hudson.model.Job getLastBuild</string>
+        <string>method hudson.model.Run getAbsoluteUrl</string>
+        <string>method hudson.model.Run getArtifacts</string>
+        <string>method hudson.model.Run getUrl</string>
+        <string>method hudson.model.Run keepLog boolean</string>
+        <string>method hudson.model.Run setDisplayName java.lang.String</string>
+        <string>method org.jenkinsci.plugins.workflow.support.steps.build.RunWrapper getRawBuild</string>
+        <string>staticMethod jenkins.model.Jenkins getInstance</string>
+        <string>staticMethod jenkins.model.Jenkins getInstanceOrNull</string>
+    </approvedSignatures>
+
+    <aclApprovedSignatures/>
+    <approvedClasspathEntries/>
+    <pendingScripts/>
+    <pendingSignatures/>
+    <pendingClasspathEntries/>
+</scriptApproval>
